@@ -1,0 +1,167 @@
+# cv
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title> 
+    <link rel="stylesheet" href="style.css"> // länk till css 
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile">
+            <div class="profile_container">     //Klass för profil 
+                <div class="profile_profileImg"> // klass för img 
+                    <img src="C:\Users\tannaz.yadollahi\Desktop\webb\Bilder\Blomma.jpg" alt="Blomma"> // länk till img
+                  </div>
+                    <h1 class="profile_name"> // klass för profil namn 
+                     <span class="profile_name_firstName">Tannaz</span>
+                     <span class="profile_name_lastName">Yadollahi</span>
+                    </h1>
+                    <p class="profile_title">Student</p> // Beskrivning titel 
+                    <p class="description"> // Bio kort om mig info 
+                        Jag heter Tannaz Yadollahi och är 17 år. Bor i Stockholm tillsammans med min familj.
+                        Som person är jag framåt drivande och positiv. Etc 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="group-1"></div> // Klass för erfahrenheter 
+         <div class="skills">
+             <h3 class="title">Expertise</h3>
+             <ul class="skill_list description">
+               <li>Java</li> // Ex för olika skills man kan ha 
+               <li>css</li>
+               <li>html</li>
+             </ul>
+           </div>
+           <div class="ref">
+             <h3 class="title">Reference</h3>
+           <div class="ref_item"></div>
+             <h4 class="ref_name">Stockholm</h4>
+             <P class="description">
+                 text text text text
+             </P>
+         </div>
+       </div>
+        <div class="group-2"></div> // Grupperingar för olika titlar med punkter ( Hann inte fixa den ) 
+        <div class="group-3"></div>
+    </div>
+</body>
+
+</html>
+
+![image](https://user-images.githubusercontent.com/117911766/227804117-3382b37a-c1dc-4079-88e3-2c252ea249e0.png)
+// Hade problem med att ladda upp min img, därför tog jag länken till bilden istället. Annars är HTML ok. 
+
+
+CSS
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 10px
+}
+body{
+   font-family: Inter, sans-serif;
+   background-color: rgb(247, 242, 242);
+   color: rgb(255, 249, 249);
+}
+
+img {
+    border-radius: 50%; // storlek, höjd, bredd
+    height: 100px;
+    width: 100px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.description{ 
+    margin-top: 1rem;
+    font-size: 1,5rem;
+    font-weight: 400;
+    color: var(--tect-color); // denna kod tar den senaste färgen alltså blir de vit färg nu
+
+}
+.title {
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.container {
+    max-width: 1000px;
+    height: 1000px;
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background: rgb(7, 7, 7); 
+    gap: 4rem; 
+}
+@media only screen and (max-width: 768px){ //Detta kan användas för att göra en webbplats responsiv. Anpassning till olika skärmar
+    .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+}
+.profile {
+    grid-column: 1/ -1;
+    margin-bottom: 2rem;
+}
+
+.profile_container {
+    display: flex;
+    gap: 2rem;
+}
+.profile_profileImg {
+    max-width: 250px;
+}
+.profile_name_firstName{
+    color:white;
+    font-size: 200;
+    font-size: clamp(1rem, 5vw ,2rem);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: -0,8rem;
+}
+.profile_name_lastName{
+    color: rgb(84, 157, 202);
+    font-weight: 700;
+    font-size: clamp(1rem, 5vw, 3rem);
+    text-transform: uppercase;
+    display: block;
+}
+.profile_title {
+    font-size: 1,5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+@media only screen and (max-width: 768px) {
+    .profile_container {
+        flex-direction: column;
+    }
+}
+
+.skill_list {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 2;
+}
+
+
+
+// Jag hann ej bli klar med hemsidan. 
+Jag han börja med html och css. 
+planen var att i javascript göra funktioner för att kunna ändra profil bilden. 
+gjorde mitt bästa under den tiden jag hade. 
